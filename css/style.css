@@ -1,0 +1,150 @@
+body {
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  text-align: center;
+  line-height: normal;
+  background: #fffdf8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header h1 {
+  padding-top: 23px;
+  padding-bottom: 29px;
+}
+
+header nav {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #6a6a6a;
+  border-bottom: 2px solid #6a6a6a;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin-bottom: 36px;
+}
+header nav li {
+  display: inline;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 18px;
+  color: #54410c;
+}
+header nav li a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+header nav li.active a {
+  font-weight: bold;
+  color: #000000;
+}
+
+p.visual {
+  margin-bottom: 67px;
+}
+
+main section.ninnkino li {
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+main section.ninnkino ul {
+  margin-bottom: 67px;
+}
+main section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1d1502;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #868686;
+  border-bottom: 2px solid #868686;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section.ninnkino p {
+  color: #1d1502;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 53px;
+}
+main section.ninnkino {
+  border-bottom: 3px solid #000000;
+  margin-bottom: 67px;
+}
+
+main section.ivent li {
+  margin-bottom: 50px;
+}
+main section.ivent {
+  border-bottom: 3px solid #000000;
+  margin-bottom: 67px;
+}
+main aside a:hover {
+  opacity: 0.7;
+}
+main aside {
+  padding-bottom: 67px;
+}
+
+footer {
+  background-color: #322707;
+  padding-top: 42px;
+}
+footer section {
+  width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5f4e1c;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-bottom: 30px;
+}
+footer section h2 {
+  color: #1d1502;
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+footer section p.time {
+  color: #1d1502;
+  font-size: 28px;
+  font-weight: bold;
+}
+footer p.footer-logo {
+  margin-bottom: 30px;
+}
+footer p.chizu {
+  margin-bottom: 30px;
+  padding: 14px;
+}
+
+footer address {
+  color: #fffdf8;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+footer address img {
+  margin-right: 9px;
+}
+
+footer p.cyosakukenn {
+  background-color: #000000;
+  color: #fffdf8;
+  font-size: 20px;
+  font-family: Georgia;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}

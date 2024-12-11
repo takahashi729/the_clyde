@@ -1,0 +1,66 @@
+@import url(common.css);
+article div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+article div section {
+  flex-basis: 47.3%;
+}
+
+/* メインセクション */
+main article section {
+  border: 2px solid #4a4a4a;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  margin-bottom: 67px;
+}
+/* メインセクション題名 */
+main article section h2 {
+  font-size: 24px;
+  color: #54410c;
+  font-weight: bold;
+  padding-bottom: 38px;
+  margin-bottom: 23px;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* メインセクション画像 */
+main section p.visual {
+  margin-bottom: 22px;
+}
+main section p.setumei {
+  color: #1d1502;
+  text-align: left;
+  font-size: 18px;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-bottom: 12px;
+}
+main section p.monney {
+  color: #54410c;
+  font-size: 24px;
+  margin-bottom: 19px;
+}
+main section p.link a {
+  background-color: #6b5311;
+  color: #fffdf8;
+  padding: 16.5px 94px;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+}
+main section p.link a:hover {
+  opacity: 0.7;
+}
+
+/* レスポンシブ */
+@media (max-width: 991px) {
+  article div {
+    display: block;
+  }
+}

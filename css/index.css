@@ -1,0 +1,54 @@
+@import url(common.css);
+p.visual {
+  margin-bottom: 67px;
+}
+main section.ninnkino ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 67px;
+}
+main section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1d1502;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #868686;
+  border-bottom: 2px solid #868686;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Kaisei Tokumin", serif;
+}
+
+main section.ninnkino p {
+  color: #1d1502;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 53px;
+}
+main section.ninnkino {
+  border-bottom: 3px solid #000000;
+  margin-bottom: 67px;
+}
+
+main section.ivent li {
+  margin-bottom: 50px;
+}
+main section.ivent {
+  border-bottom: 3px solid #000000;
+  margin-bottom: 67px;
+}
+
+/* レスポンシブ */
+@media (max-width: 767px) {
+  p.visual img {
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+  }
+}

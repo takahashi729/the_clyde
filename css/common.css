@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap");
+/* 自動スクロール */
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  text-align: center;
+  line-height: normal;
+  background-color: #fffdf8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header h1 {
+  padding-top: 23px;
+  padding-bottom: 29px;
+}
+/*-------------------------------
+ハンバーガーアイコン（モバイル用）
+-------------------------------*/
+/* 幅:50px, 高さ:50px, ボーダー:なし, 背景色:任意, FlexBox, 横:中央, 縦:中央, 配置:absolute, 上:15px, 右:15px  */
+.hmenu {
+  /* 正方形を作る */
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #54410c;
+  /* spanタグを真ん中に持ってくるため、フレックスボックスを使う */
+  /* 最初は表示しない575px以下の時に出てくるように設定 */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.hmenu span,
+.hmenu span::before,
+.hmenu span::after {
+  width: 35px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  /* spanはインラインなのでブロックにする */
+  display: block;
+  position: absolute;
+  /* だんだん変わっていく */
+  transition: 0.5s;
+}
+
+.hmenu span::before {
+  content: "";
+  top: 12px;
+}
+.hmenu span::after {
+  content: "";
+  bottom: 12px;
+}
+
+/* closeボタンを
+作る */
+/* 背景色:unset */
+.hmenu.close span {
+  background-color: unset;
+}
+
+/* 下:0, 回転:-45° */
+.hmenu.close span::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* 上:0, 回転:45° */
+.hmenu.close span::after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+nav {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #6a6a6a;
+  border-bottom: 2px solid #6a6a6a;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin-bottom: 36px;
+  position: sticky;
+  top: 0;
+  background-color: hsla(43, 100%, 99%, 0.7);
+}
+nav ul {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+nav li {
+  font-size: 18px;
+  color: #54410c;
+}
+nav li a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+nav li.active a {
+  font-weight: bold;
+  color: #000000;
+}
+/* h1題名 */
+main article h1 {
+  color: #1d1502;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 67px;
+  margin-bottom: 67px;
+  padding-bottom: 57px;
+  background-image: url(../img/since\ 1.png);
+  background-repeat: no-repeat;
+  /* background-color: aqua; */
+  background-position: center bottom;
+  font-family: "Kaisei Tokumin", serif;
+}
+
+main aside a:hover {
+  opacity: 0.7;
+}
+main aside {
+  padding-bottom: 67px;
+}
+
+footer {
+  background-color: #322707;
+  padding-top: 42px;
+}
+footer section {
+  max-width: 540px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5f4e1c;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-bottom: 30px;
+}
+footer section h2 {
+  color: #1d1502;
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+footer section p.time {
+  color: #1d1502;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+footer p.footer-logo {
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer address {
+  color: #fffdf8;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+footer address img {
+  margin-right: 9px;
+}
+
+footer p.cyosakukenn {
+  background-color: #000000;
+  color: #fffdf8;
+  font-size: 20px;
+  font-family: Georgia;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+footer p.pagetop {
+  position: fixed;
+  right: 25px;
+  bottom: 34px;
+}
+footer p.pagetop a:hover {
+  opacity: 0.7;
+}
+
+/* レスポンシブ */
+@media (max-width: 767px) {
+  nav {
+    position: unset;
+  }
+  nav ul {
+    display: block;
+  }
+  nav li {
+    padding-bottom: 12px;
+  }
+  footer p.cyosakukenn span {
+    display: none;
+  }
+  .hmenu {
+    display: flex;
+  }
+  nav {
+    display: none;
+  }
+}

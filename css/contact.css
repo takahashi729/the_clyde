@@ -1,0 +1,117 @@
+@import url(common.css);
+
+/* flexボックス */
+main article form div.contact {
+  border: 2px solid #4a4a4a;
+  padding-top: 10px;
+  padding-bottom: 38px;
+  padding-left: 95px;
+  padding-right: 95px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* 項目-文字 */
+main article form legend {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 28px;
+  padding-bottom: 13px;
+}
+/* div項目の幅 */
+main article form div {
+  flex: 1;
+}
+/* 入力ボックス */
+main input[type="text"],
+main input[type="email"],
+main input[type="tel"] {
+  width: 100%;
+  height: 44px;
+  outline: none;
+}
+textarea {
+  width: 100%;
+  height: 262px;
+  resize: vertical;
+  outline: none;
+}
+main input[type="text"],
+main input[type="email"],
+main input[type="tel"],
+textarea {
+  border: 1px solid #4a4a4a;
+}
+
+/* 項目横の*半角 */
+main article span {
+  padding-left: 0.5em;
+}
+
+/* 必須項目の注意書き */
+main form aside.tyuui {
+  font-size: 16px;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+/* 送信ボタン */
+main form button {
+  color: #fffdf8;
+  font-size: 18px;
+  border: none;
+  background-color: #6b5311;
+  padding: 16px 62px;
+  margin-bottom: 67px;
+  cursor: pointer;
+}
+/* 不透明度:0.7 */
+main form button:hover {
+  opacity: 0.7;
+}
+
+/* 個人情報保護方針 */
+
+main article dl {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 67px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #6b5311;
+  padding: 13px 30px;
+}
+/* 題名下余白 */
+main article dt {
+  padding-bottom: 6px;
+}
+/* 説明 */
+main article dd {
+  text-align: left;
+}
+
+/* -----------------------
+レスポンシブ
+------------------------- */
+
+/* ipad */
+@media (max-width: 991px) {
+  main article form div.contact {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+/* スマホ */
+@media (max-width: 767px) {
+  main article form div.contact {
+    display: block;
+  }
+  main article form div.contact {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
